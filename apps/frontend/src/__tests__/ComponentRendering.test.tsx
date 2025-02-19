@@ -1,4 +1,3 @@
-// src/__tests__/ComponentRendering.test.tsx
 import { render, screen } from "@testing-library/react";
 import Footer from "../adapters/inbound/components/Footer";
 import NavBar from "../adapters/inbound/components/NavBar";

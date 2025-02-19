@@ -1,4 +1,3 @@
-// src/__tests__/Accessibility.test.tsx
 import { fireEvent, render, screen } from "@testing-library/react";
 import Home from "../adapters/inbound/pages/Home";
 
