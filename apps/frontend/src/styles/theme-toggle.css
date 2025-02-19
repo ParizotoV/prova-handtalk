@@ -1,0 +1,44 @@
+/* ====== BOTÃO TOGGLE DE TEMA ====== */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  font-size: var(--font-size-sm);
+  transition: background 0.3s ease, transform 0.2s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* LIGHT MODE */
+.theme-toggle.light {
+  background: var(--neutral-high-lightest);
+  color: var(--neutral-low-dark);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle.light:hover {
+  background: var(--neutral-high-light);
+  transform: scale(1.05);
+}
+
+/* DARK MODE */
+.theme-toggle.dark {
+  background: rgba(255, 255, 255, 0.1); /* 🔥 Agora fundo translúcido */
+  color: var(--neutral-high-lightest);
+  box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.2);
+}
+
+.theme-toggle.dark:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* Ícone */
+.theme-icon {
+  font-size: 20px;
+}

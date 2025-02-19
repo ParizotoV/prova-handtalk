@@ -1,0 +1,143 @@
+/* ==== DESIGN SYSTEM: BRAND COLORS ==== */
+:root {
+  /* 🎨 Primárias */
+  --primary-main: #f5f5f5;
+  --primary-light: #c4c4c4;
+  --primary-medium: #666666;
+  --primary-dark: #333333;
+
+  /* 🎨 Secundárias */
+  --secondary-main: #f06f06;
+  --secondary-lightest: #fbc5a0;
+  --secondary-light: #faae4b;
+  --secondary-medium: #fb8c01;
+  --secondary-dark: #cc5e05;
+
+  /* 🎨 Destaques */
+  --highlight-main: #413987;
+  --highlight-lightest: #e0e6f9;
+  --highlight-light: #5b69c2;
+  --highlight-medium: #542dc2;
+  --highlight-dark: #121a5c;
+
+  /* 🎨 Neutras */
+  --neutral-low-main: #333333;
+  --neutral-low-lightest: #979797;
+  --neutral-low-light: #818181;
+  --neutral-low-medium: #666666;
+  --neutral-low-dark: #000000;
+
+  --neutral-high-main: #f5f5f5;
+  --neutral-high-lightest: #ffffff;
+  --neutral-high-light: #dedede;
+  --neutral-high-medium: #c4c4c4;
+  --neutral-high-dark: #aeaeae;
+
+  /* 🎨 Acessibilidade */
+  --accessibility-main: #003087;
+
+  /* ==== NAVBAR CONFIGURAÇÃO ==== */
+  --navbar-bg-light: var(--secondary-main);
+  --navbar-bg-dark: var(--primary-dark);
+  --navbar-text-light: var(--neutral-high-lightest);
+  --navbar-text-dark: var(--neutral-high-lightest);
+  --navbar-border-light: var(--neutral-high-medium);
+  --navbar-border-dark: var(--neutral-low-medium);
+
+  /* ==== FOOTER CONFIGURAÇÃO ==== */
+  --footer-bg-light: var(--secondary-main);
+  --footer-bg-dark: var(--highlight-main);
+  --footer-text-light: var(--neutral-high-lightest);
+  --footer-text-dark: var(--neutral-high-lightest);
+  --footer-border-light: var(--neutral-high-medium);
+  --footer-border-dark: var(--neutral-low-medium);
+
+  /* ==== TIPOGRAFIA ==== */
+  --text-color-light: var(--neutral-low-dark);
+  --text-color-dark: var(--neutral-high-lightest);
+  --text-title: var(--neutral-low-dark);
+  --text-subtitle: var(--neutral-low-medium);
+  --text-muted: var(--neutral-low-light);
+
+  /* 🔥 NOVO: FONT-SIZE 🔥 */
+  --font-size-xxxs: 12px;
+  --font-size-xxs: 14px;
+  --font-size-xs: 16px;
+  --font-size-sm: 20px;
+  --font-size-md: 24px;
+  --font-size-lg: 32px;
+
+  /* 🔥 NOVO: LINE-HEIGHT 🔥 */
+  --line-height-default: 100%;
+  --line-height-sm: 130%;
+  --line-height-md: 140%;
+  --line-height-lg: 150%;
+
+  /* 🔥 NOVO: OPACITY 🔥 */
+  --opacity-medium: 0.5;
+
+  /* 🔥 NOVO: SHADOW 🔥 */
+  --shadow-level-1: 0px 4px 8px rgba(0, 0, 0, 0.15);
+
+  /* 🔥 NOVO: SPACING 🔥 */
+  --spacing-quarck: 4px;
+  --spacing-nano: 8px;
+  --spacing-xxxs: 12px;
+  --spacing-xxs: 16px;
+  --spacing-xs: 24px;
+  --spacing-sm: 32px;
+
+  /* ==== LAYOUT ==== */
+  --background-light: var(--neutral-high-lightest);
+  --background-dark: var(--primary-dark);
+  --border-light: var(--neutral-high-light);
+  --border-dark: var(--neutral-low-medium);
+
+  /* ==== BOTÕES E INPUTS ==== */
+  --button-bg: var(--secondary-main);
+  --button-text: var(--neutral-high-lightest);
+  --button-hover: var(--secondary-dark);
+
+  --input-bg: var(--neutral-high-lightest);
+  --input-border: var(--neutral-high-medium);
+  --input-text: var(--neutral-low-dark);
+}
+
+/* ==== DARK MODE CONFIGURAÇÃO ==== */
+[data-theme="dark"] {
+  --navbar-bg: var(--navbar-bg-dark);
+  --navbar-text: var(--navbar-text-dark);
+  --navbar-border: var(--navbar-border-dark);
+  --background-color: var(--background-dark);
+  --text-color: var(--text-color-dark);
+
+  --border-color: var(--border-dark);
+  --input-bg: var(--neutral-low-main);
+  --input-border: var(--neutral-low-medium);
+  --input-text: var(--neutral-high-lightest);
+}
+
+/* ==== LIGHT MODE CONFIGURAÇÃO ==== */
+[data-theme="light"] {
+  --navbar-bg: var(--navbar-bg-light);
+  --navbar-text: var(--navbar-text-light);
+  --navbar-border: var(--navbar-border-light);
+  --background-color: var(--background-light);
+  --text-color: var(--text-color-light);
+
+  --border-color: var(--border-light);
+  --input-bg: var(--neutral-high-lightest);
+  --input-border: var(--neutral-high-medium);
+  --input-text: var(--neutral-low-dark);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: "Roboto", sans-serif;
+}

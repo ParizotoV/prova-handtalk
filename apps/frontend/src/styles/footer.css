@@ -1,0 +1,74 @@
+/* ====== FOOTER ====== */
+.footer {
+  background: var(--footer-bg-light);
+  color: var(--footer-text-light);
+  padding: var(--spacing-xs) 0;
+  text-align: center;
+  font-size: var(--font-size-xxs);
+  margin-top: 32px;
+}
+
+/* Conteúdo do footer */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xs);
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section h4 {
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-nano);
+}
+
+.footer-socials {
+  display: flex;
+  gap: var(--spacing-nano);
+}
+
+.footer-socials a {
+  color: var(--footer-text-light);
+  font-size: var(--font-size-md);
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: var(--highlight-main);
+}
+
+/* Rodapé inferior */
+.footer-bottom {
+  margin-top: var(--spacing-xs);
+  padding-top: var(--spacing-nano);
+  border-top: 1px solid var(--footer-border-light);
+}
+
+/* DARK MODE */
+[data-theme="dark"] .footer {
+  background: var(--footer-bg-dark);
+  color: var(--footer-text-dark);
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-top: 1px solid var(--footer-border-dark);
+}
+
+[data-theme="dark"] .footer-socials a:hover {
+  color: var(--highlight-light);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+}

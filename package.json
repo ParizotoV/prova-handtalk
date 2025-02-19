@@ -1,0 +1,17 @@
+{
+  "name": "prova-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build:plugin": "cd apps/plugin && npm run build",
+    "dev": "yarn build:plugin && lerna run dev --parallel",
+    "build": "lerna run build --parallel",
+    "start": "lerna run start --parallel",
+    "test": "lerna run test --parallel"
+  },
+  "dependencies": {
+    "lerna": "^8.1.9"
+  }
+}
